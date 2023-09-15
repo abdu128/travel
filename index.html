@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+  <!---------------CSS-->
+  <link rel="stylesheet" href="assets/css/Style.css">
+
+  <!-----------FAVICon----------->
+
+
+  <!--------------REMIX ICONS-------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-------------SWIPER CSS---------------->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+
+      <a href="#" class="nav nav__logo">Travel</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#discover" class="nav__link">Discover</a>
+          </li>
+          <li class="nav__item">
+            <a href="#place" class="nav__link">Place</a>
+          </li>
+        </ul>
+        <div class="nav__dark">
+          <!-- Theme change button -->
+          <span class="change-theme-name">Dark mode</span>
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </div>
+
+        <i class="ri-close-line nav__close" id="nav-close"></i>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-function-line"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="home" id="home">
+      <img src="assets/img/freind.jpg" alt="" class="home__img">
+
+      <div class="home__container container grid">
+        <div class="home__data">
+          <span class="home__data-subtitle">DIscover your place</span>
+          <h1 class="home__data-subtitle">Explore the <br> Best <b> Beautiful <br> places</b></h1>
+          <a href="#" class="button">Explore</a>
+        </div>
+        <div class="home__social">
+          <a href="https://www.facebook.com/" id="fa" target="_blank" class="home__social-link">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a href="https://www.instagram.com/" id="inst" target="_blank" class="home__social-link">
+            <i class="ri-instagram-fill"></i>
+          </a>
+          <a href="https://www.twitter.com/" id="tw" target="_blank" class="home__social-link">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a href="https://www.youtube.com/" id="yo" target="_blank" class="home__social-link">
+            <i class="ri-youtube-fill"></i>
+          </a>
+
+        </div>
+        <div class="home__info">
+          <div>
+            <span class="home__info-title">5 best places to visit</span>
+            <a href="#" class="button button--flex button--link home__info-button">
+              More <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+          <div>
+            <img src="assets/img/sheger-park.jpg " alt="" class="home__info-img">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__container container grid">
+        <div class="about__data">
+          <br>
+          <br>
+          <h2 class="section__titile about__title">
+            More Information <br> About The Best places
+          </h2>
+          <p class="about__description">You can find the most beauriful and pleasant places at the best
+            prices wuth special discounts, <br> you choose the place we will guide you all the way to wait, get your
+            place now
+          </p>
+          <br>
+          <br>
+          <a href="#" class="button">Reserve a places</a>
+        </div>
+        <div class="about__img">
+          <div class="about__img-overlay">
+            <img src="assets/img/harar.jpeg" alt="" class="about__img-one">
+          </div>
+          <div class="about__img-overlay">
+            <img src="assets/img/gonder.jpeg" alt="" class="about__img-two">
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <br>
+      <br>
+      <!------------------DISCOVER ----------------->
+    </section>
+
+    <section class="discover" id="discover">
+      <h2 class="section__title">Discover the most <br> attractive places </h2>
+
+      <div class="discover__container container swiper-container">
+        <div class="swiper-wrapper">
+          <!------------------DISCOVER 1----------------->
+
+          <div class=" discover__card swiper-slide">
+            <img src="assets/img/Erta-Ale-lava-lake.webp" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Erta-Ale-lava-lake</h2>
+              <span class="discover__description">32 tours available</span>
+            </div>
+          </div>
+          <!------------------DISCOVER 2----------------->
+          <div class="discover__card swiper-slide">
+            <img src="assets/img/harar.jpeg" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Harar</h2>
+              <span class="discover__description">48 tours available</span>
+            </div>
+          </div>
+          <!------------------DISCOVER 3----------------->
+          <div class="discover__card swiper-slide">
+            <img src="assets/img/bale.jpeg" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Bale</h2>
+              <span class="discover__description">24 tours available</span>
+            </div>
+          </div>
+
+
+          <!------------------DISCOVER 4----------------->
+          <div class="discover__card swiper-slide">
+            <img src="assets/img/gonder.jpeg" alt="" class="discover__img">
+            <div class="discover__data">
+              <h2 class="discover__title">Gonder</h2>
+              <span class="discover__description">19 tours available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <!-------------------------VIDEO SECTION------------------>
+    <section class="video section">
+      <h2 class="section__title">Video Tour</h2>
+      <div class="video__container container">
+        <p class="video__description">
+          Find out more with our video of the most Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Ex, non
+          dolorum veniam quia rem corporis hic excepturi consectetur asperiores reiciendis. Deserunt ea aperiam ipsum
+          maxime assumenda aliquam. <br> Illo, vitae itaque?
+        </p>
+
+        <div class="video__content">
+          <video id="video-file">
+            <source src="assets/video/Ethiopia_ Dramatic Landscapes(1).mp4" type="video/mp4">
+          </video>
+          <button class="button button--flex video__button" id="video-button">
+            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+          </button>
+        </div>
+    </section>
+
+    <!-----------------------EXPERIEMCE-------------->
+    <section class="experience section">
+      <h2 class="section__title">The most popular attractions to <br> visit in your lifetime</h2>
+      <div class="experience__container container grid">
+        <div class="experience__content grid">
+          <div class="experience__data">
+            <h2 class="experience__number">The Blue Nile Falls</h2>
+            <span class="experience__description">The Nile River is the longest in Africa and its two tributaries are
+              the White Nile and the Blue Nile.
+
+              The Blue Nile begins in Ethiopia and along its course you’ll find the Blue Nile Falls – a spot to rival
+              Niagara.
+            </span>
+          </div>
+          <div class="experience__data">
+            <h2 class="experience__number">Lalibela</h2>
+            <span class="experience__description">Lalibela pretty much blows the mind of everyone who visits. This
+              medieval settlement was designed to be a kind of second Jerusalem and modern day inhabitants remain proud
+              of this distinction. Lalibela is perched in the middle of a broad church complex made entire of rock.
+            </span>
+          </div>
+          <div class="experience__data">
+            <h2 class="experience__number">Aba jifar</h2>
+            <span class="experience__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+              numquam facere magnam quo tenetur sunt voluptatibus accusamus dolores perspiciatis! Officiis distinctio,
+              error autem ipsum voluptatem, corporis, possimus numquam commodi quos totam sapiente! Magni doloribus ea
+              odio quam doloremque saepe quasi.
+            </span>
+          </div>
+
+        </div>
+        <div class="experience__img grid">
+          <div class="experience__overlay">
+            <img src="assets/img/abay.jpg" alt="" class="experience__img-one">
+          </div>
+          <div class="experience__overlay">
+            <img src="assets/img/Lalibela-Rock-Churches.jpg" alt="" class="experience__img-one">
+          </div>
+          <div class="experience__overlay">
+            <img src="assets/img/aba.jpg" alt="experience__img-one">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    </div>
+    </div>
+
+    <br>
+    <br>
+    </section>
+    <section class="about" id="about">
+      <h2 class="section__title">About Us </h2>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer section">
+        <div class="footer__container container grid">
+          <div class="footer__content grid">
+            <div class="footer__data">
+              <br>
+              <br>
+              <h3 class="footer__title">Travel</h3>
+              <p class="footer__description">Travel you choose the <br> destination,
+                we offer you the <br> experience.
+              </p>
+              <div>
+                <a href="https://www.facebook.com/" target="_blank" class="footer__social__fa">
+                  <i class="ri-facebook-box-fill"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="footer__social__tw">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="footer__social__in">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" class="footer__social__yo">
+                  <i class="ri-youtube-fill"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="footer__data">
+              <h3 class="footer__subtitle">About</h3>
+              <ul>
+                <li class="footer__item">
+                  <a href="" class="footer__link">About Us</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Features</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">New & Blog</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__data">
+              <h3 class="footer__subtitle">Company</h3>
+              <ul>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Team</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Plan y Pricing</a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">Become a member</a>
+                </li>
+              </ul>
+            </div>
+
+
+          </div>
+
+          <div class="footer__rights">
+            <p class="footer__copy">&#169; Dev. By Abdulaziz Nejib</p>
+            <div class="footer__terms">
+              <a href="#" class="footer__terms-link">Terms & Agreements</a>
+              <a href="#" class="footer__terms-link">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+  </main>
+
+
+  <!------------swiper JS----------->
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+
+  <!--MAIN Javascript file-->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
