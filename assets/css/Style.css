@@ -845,12 +845,23 @@ input {
   .place__container {
     padding-top: 2rem;
   }
-  .experience__overlay:nth-child(1) {
-    width: 363px;
-    margin-right: 4rem;
+  .experience__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; /* Adjust the gap between items */
+    text-align: center;
   }
-  .experience__overlay:nth-child(2) {
-    width: 160px;
+  
+  .experience__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .experience__data,
+  .experience__img {
+    margin: 20px 0; /* Add margin between text and image */
   }
   .subscribe__bg {
     background: none;
@@ -947,7 +958,27 @@ input {
   .experience__overlay3 {
     margin-bottom: 1rem; /* Add spacing between stacked images */
   }
+  .experience__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .experience__data {
+    margin-bottom: 20px;
+    align-items: center; /* Center horizontally */
+  text-align: center;
+  }
+  .experience__img {
+    order: 2; 
+    display: flex;
+
+    align-items: center; /* Center vertically */
+  justify-content: center;/* Change the order of the image */
+  }
 }
+
 
 @media screen and (min-width: 1200px) {
   .container {
@@ -963,4 +994,5 @@ input {
   .home__container, .home__img {
     height: 640px;
   }
+  
 }
