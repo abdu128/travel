@@ -165,6 +165,7 @@ input {
   outline: none;
 }
 
+
 /*=======================  REUSABLE CSS CLASSES =========================*/
 .section {
   padding: 4.5rem 0 2.5rem;
@@ -188,6 +189,21 @@ input {
 .grid {
   display: grid;
   gap: 1.5rem;
+}
+.experience__img {
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  text-align: center; /* Center the image horizontally within the container */
+  margin: 0 auto; /* Center the container horizontally within its parent */
+ /* Set a fixed height for the image containers (adjust as needed) */
+  overflow: hidden; /* Ensure images don't overflow their containers */
+}
+
+.experience__img img {
+  width: 400px; /* Ensure the image doesn't exceed its container width */
+  height: auto;
+  border-radius: 5%; /* Maintain the image's aspect ratio */
 }
 
 /*=======================  HEADER =========================*/
@@ -572,15 +588,21 @@ input {
 
 /*==================== FOOTER ===========================*/
 
+.footer_section{
+  background-color: rgb(0, 0, 0);
+  border-top-right-radius: 5%;
+  border-top-left-radius: 5%;
+
+}
 .footer__container {
   
-  color: rgb(110, 36, 36);
-  row-gap: 5rem;
+  color: rgb(167, 29, 29);
+  row-gap: 1rem;
  
 }
 
 .footer__content {
-  color: white;
+  color: rgb(255, 255, 255);
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
   
@@ -595,17 +617,19 @@ input {
 
 .footer__title {
   
-  color: rgb(141, 51, 51);
+  color: rgb(59, 102, 128);
+  column-gap: 2rem;
+
 }
 
 .footer__description {
   margin-bottom: var(--mb-2);
-  color: rgb(145, 139, 139);
+  color: rgb(255, 255, 255);
 }
 
 .footer__social__fa {
   font-size: 1.25rem;
-  color: rgb(0, 0, 0);
+  color: rgb(50, 99, 95);
   margin-right: var(--mb-1-25);
 }
 .footer__social__fa:hover{
@@ -613,7 +637,7 @@ input {
 }
 .footer__social__tw {
   font-size: 1.25rem;
-  color: rgb(0, 0, 0);
+  color: rgb(50, 99, 95);
   margin-right: var(--mb-1-25);
 }
 .footer__social__tw:hover{
@@ -623,9 +647,10 @@ input {
   padding-left: 47%;
   
 }
+
 .footer__social__in {
   font-size: 1.25rem;
-  color: rgb(0, 0, 0);
+  color: rgb(50, 99, 95);
   margin-right: var(--mb-1-25);
 }
 .footer__social__in:hover{
@@ -633,7 +658,7 @@ input {
 }
 .footer__social__yo {
   font-size: 1.25rem;
-  color: rgb(0, 0, 0);
+  color: rgb(50, 99, 95);
   margin-right: var(--mb-1-25);
 }
 .footer__social__yo:hover{
@@ -641,37 +666,38 @@ input {
 }
 
 .footer__subtitle {
-  color: white;
+  color: rgb(54, 95, 102);
   margin-bottom: var(--mb-1);
 }
 
 .footer__item {
-  color: white;
+  color: rgb(46, 80, 94);
   margin-bottom: var(--mb-0-75);
 }
 
 .footer__link {
-  color: white;
-  color: var(--text-color);
+  color: rgb(255, 255, 255);
+
 }
 
 .footer__link:hover {
   color: var(--title-color);
 }
 
+
 .footer__rights {
-  color: white;
+  color: rgb(50, 99, 95);
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
   text-align: center;
 }
 .footer__data{
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .footer__copy, .footer__terms-link {
-  color: white;
+  color: rgb(146, 146, 146);
   font-size: var(--small-font-size);
   
 }
@@ -908,6 +934,18 @@ input {
   }
   .footer__content {
     justify-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .experience__img {
+    flex-direction: column; /* Stack images vertically on smaller screens */
+  }
+
+  /* Adjust individual image containers if needed */
+  .experience__overlay1,
+  .experience__overlay2,
+  .experience__overlay3 {
+    margin-bottom: 1rem; /* Add spacing between stacked images */
   }
 }
 
