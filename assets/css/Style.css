@@ -214,20 +214,24 @@ input {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: transparent;
+  background-color: rgb(14, 34, 33);
 }
 
 /*=======================  NAV =========================*/
 
 .nav {
-  height: var(--header-height);
+  height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(14, 34, 33);
 }
+
+
+
 .nav__logo,
 .nav__toggle{
-  color: var(--white-color);
+  color: white;
 }
 .nav__logo{
   font-weight: var(--font-semi-bold);
@@ -259,7 +263,7 @@ input {
   }
 
 .nav__link{
-  color: var(--text-color-light);
+  color: white;
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
 }
@@ -271,7 +275,7 @@ input {
   top: 0.4%;
   right: 1rem;
   font-size: 1.5rem;
-  color: var(--title-color);
+  color: white;
   cursor: pointer;
 }
 
@@ -283,12 +287,13 @@ input {
 
 /* CHANGE BACKGROUND header*/
 .scroll-header{
-  background-color: var(--body-color);
-  box-shadow: 0 0 4px hsl(var(--hue-color), 64%, 15%, .15) ;
+  background-color: rgb(14, 34, 33);
+  box-shadow: rgb(14, 34, 33) ;
+  color: white;
 }
 .scroll-header .nav__logo,
 .scroll-header .nav__toggle{
-  color:var(--title-color) ;
+  color:white ;
 }
 
 
@@ -447,11 +452,12 @@ input {
 .discover__card {
   position: relative;
   width: 200px;
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 6%;
+  padding-right: 6%;
   
   
   overflow: var(--img-hidden);
+  background-color:transparent;
   
 
 }
@@ -837,7 +843,7 @@ input {
     margin-bottom: var(--mb-2);
   }
   .discover__container {
-    width: 610px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -898,22 +904,22 @@ input {
     font-size: var(--normal-font-size);
   }
   .home__info-img {
-    width: 240px;
+    width: 200px;
   }
   .about__img-one {
-    width: 230px;
+    width: 70%;
   }
   .about__img-two {
-    width: 290px;
+    width: 60%;
   }
   .discover__card {
-    width: 237px;
+    width: 70%;
   }
   .discover__container {
-    width: 700px;
+    width: 70%;
   }
   .discover__data {
-    left: 1.5rem;
+    left: 2.5rem;
     bottom: 2rem;
   }
   .discover__title {
