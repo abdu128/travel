@@ -260,10 +260,11 @@ input {
     display: flex;
     flex-direction: column;
     row-gap: 2.5rem;
+    color: rgb(14, 34, 33);
   }
 
 .nav__link{
-  color: white;
+  color: grey;
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
 }
@@ -275,7 +276,7 @@ input {
   top: 0.4%;
   right: 1rem;
   font-size: 1.5rem;
-  color: white;
+  color: grey;
   cursor: pointer;
 }
 
@@ -293,7 +294,7 @@ input {
 }
 .scroll-header .nav__logo,
 .scroll-header .nav__toggle{
-  color:white ;
+  color:rgb(14, 34, 33) ;
 }
 
 
